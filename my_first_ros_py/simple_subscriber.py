@@ -19,6 +19,7 @@ def main(args=None):
 	node = SimpleSubscriber()
 	rclpy.spin(node)
 	node.destory_node()
+	rclpy.shuntdown()
 	
 if __name__ == '__main__':
 	main()
