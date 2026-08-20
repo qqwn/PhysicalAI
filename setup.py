@@ -1,3 +1,6 @@
+import os
+from glob import glob
+
 from setuptools import find_packages, setup
 
 package_name = 'my_first_ros_py'
@@ -10,6 +13,10 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (
+            os.path.join('share', package_name, 'launch'),
+            glob('launch/*.launch.py'),
+        ),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -26,6 +33,8 @@ setup(
         'console_scripts': [
             'simple_publisher = my_first_ros_py.simple_publisher:main',
             'simple_subscriber = my_first_ros_py.simple_subscriber:main',
+            'virtual_robot = my_first_ros_py.virtual_robot:main',
+            'go_to_goal_controller = my_first_ros_py.go_to_goal_controller:main',
         ],
     },
 )

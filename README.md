@@ -2,6 +2,8 @@
 
 > macOS와 Docker 환경에서 ROS 2 Jazzy의 핵심 통신 구조를 익히고, Python으로 Publisher, Subscriber, Service를 실습한 기록입니다.
 
+> 다음 학습 기록: [3주차 - 로봇 운동학과 목표점 이동 제어](WEEK3.md)
+
 ## 1. 이번 주 학습 목표
 
 - macOS에서 ROS 2 개발 환경이 구성되는 원리를 이해한다.
@@ -712,4 +714,3 @@ Docker 기반 Ubuntu·ROS 2 Jazzy 개발 환경을 구성하고, ROS 2의 분산
 4. Action의 Goal, Feedback, Result 구조 실습
 5. Turtlesim 또는 시뮬레이터에서 `/cmd_vel` 기반 이동 제어
 6. `ros2 bag`을 이용한 Topic 데이터 기록과 재생
-

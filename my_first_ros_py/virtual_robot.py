@@ -26,7 +26,7 @@ class VirtualRobot(Node):
         self.linear_velocity = 0.0
         self.angular_velocity = 0.0
 
-        self.dt = 0.1
+        self.dt = 0.05
 
         self.cmd_vel_subscription = self.create_subscription(
             Twist,
@@ -122,8 +122,12 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
-        node.destroy_node()
-        rclpy.shutdown()
+        try:
+            node.destroy_node()
+        except KeyboardInterrupt:
+            pass
+
+        rclpy.try_shutdown()
 
 
 if __name__ == '__main__':
