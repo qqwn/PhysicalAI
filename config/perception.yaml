@@ -1,0 +1,12 @@
+lidar_obstacle_detector:
+  ros__parameters:
+    use_sim_time: true
+    scan_topic: "/scan"
+    output_frame: "base_link"
+    front_half_angle_deg: 30.0
+    warning_distance: 1.0
+    danger_distance: 0.5
+    cluster_gap: 0.15
+    minimum_cluster_points: 3
+    center_tolerance_deg: 10.0
+    publish_markers: true

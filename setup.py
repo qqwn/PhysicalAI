@@ -1,5 +1,7 @@
-from glob import glob
+"""Install the my_first_ros_py ROS 2 package."""
+
 import os
+from glob import glob
 
 from setuptools import find_packages, setup
 
@@ -50,7 +52,11 @@ setup(
             'simple_publisher = my_first_ros_py.simple_publisher:main',
             'simple_subscriber = my_first_ros_py.simple_subscriber:main',
             'virtual_robot = my_first_ros_py.virtual_robot:main',
-            'go_to_goal_controller = my_first_ros_py.go_to_goal_controller:main',
+            'go_to_goal_controller = '
+            'my_first_ros_py.go_to_goal_controller:main',
+            'lidar_scan_reader = my_first_ros_py.lidar_scan_reader:main',
+            'lidar_obstacle_detector = '
+            'my_first_ros_py.lidar_obstacle_detector:main',
         ],
     },
 )
