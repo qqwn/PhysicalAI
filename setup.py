@@ -1,5 +1,5 @@
-import os
 from glob import glob
+import os
 
 from setuptools import find_packages, setup
 
@@ -16,6 +16,22 @@ setup(
         (
             os.path.join('share', package_name, 'launch'),
             glob('launch/*.launch.py'),
+        ),
+        (
+            os.path.join('share', package_name, 'urdf'),
+            glob('urdf/*.urdf.xacro'),
+        ),
+        (
+            os.path.join('share', package_name, 'config'),
+            glob('config/*.yaml'),
+        ),
+        (
+            os.path.join('share', package_name, 'worlds'),
+            glob('worlds/*.sdf'),
+        ),
+        (
+            os.path.join('share', package_name, 'rviz'),
+            glob('rviz/*.rviz'),
         ),
     ],
     install_requires=['setuptools'],

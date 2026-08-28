@@ -2,7 +2,7 @@
 
 > macOS와 Docker 환경에서 ROS 2 Jazzy의 핵심 통신 구조를 익히고, Python으로 Publisher, Subscriber, Service를 실습한 기록입니다.
 
-> 다음 학습 기록: [3주차 - 로봇 운동학과 목표점 이동 제어](WEEK3.md)
+> 다음 학습 기록: [3주차 - 로봇 운동학과 목표점 이동 제어](WEEK3.md) · [4주차 - Digital Twin 시뮬레이션](WEEK4.md)
 
 ## 1. 이번 주 학습 목표
 
